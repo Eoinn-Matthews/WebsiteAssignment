@@ -1,0 +1,254 @@
+﻿body
+
+{
+    font-family: "Cascadia Mono", monospace;
+    color: snow;
+    margin: 0;
+    padding: 0;
+    background-color: #292929;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+
+.page-container {
+    width: 100%;
+    max-width: 1800px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.navbar {
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #292929;
+    width: 100%;
+    position: relative;
+}
+
+    .navbar a {
+        font-size: 16px;
+        color: MediumAquaMarine;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        position: relative;
+        z-index: 2;
+        background-color: #292929;
+    }
+
+    .navbar:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 2px;
+    background-color: MediumAquaMarine;
+    z-index: 1;
+}
+
+
+.dropdown {
+    position: relative;
+    z-index: 2;
+    background-color: #292929;
+}
+
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: MediumAquaMarine;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+
+  
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        box-sizing: border-box;
+        border: 2px solid MediumAquaMarine;
+        color: snow;
+        background-color: #292929;
+    }
+   
+
+    .navbar a.active {
+        box-sizing: border-box;
+        border: 2px solid MediumAquaMarine;
+        color: snow;
+        background-color: #292929;
+    }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #292929;
+    min-width: 126px;
+    z-index: 10;
+    border-left: 2px solid MediumAquaMarine;
+    border-right: 2px solid MediumAquaMarine;
+    padding: 0px 0;
+}
+
+    .dropdown-content a {
+        float: none;
+        color: MediumAquaMarine;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        background-color: #292929;
+    }
+
+        
+        .dropdown-content a:hover {
+            box-sizing: border-box;
+            border: 2px solid MediumAquaMarine;
+            color: snow;
+            background-color: #292929;
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar-foot {
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    width: 100%;
+    position: relative;
+}
+
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 30px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.image {
+    border: dashed MediumAquaMarine;
+    background-image: url('CodeTEMP.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    aspect-ratio: 16 / 7;
+    box-sizing: border-box;
+}
+
+    #img-planning {
+        background-image: url('WireFrame.jpg');
+    }
+    #img-building {
+        background-image: url('Code2.jpg');
+    }
+    #img-testing {
+        background-image: url('CodeTEMP.png');
+    }
+    #img-jsCode {
+        background-image: url('JSCode.jpg');
+    }
+    #img-assembly {
+        background-image: url('AssemblyCode.png');
+    }
+    #img-fallout {
+        background-image: url('Fallout.png');
+    }
+    #img-tron {
+        background-image: url('Tron.png');
+    }
+    #img-windows {
+        background-image: url('windows93.png');
+        background-position: center left;
+    }
+    #img-hacktyper {
+        background-image: url('HackTyper.png');
+        background-position: center left;
+    }
+    #img-linux {
+        background-image: url('Linux.png');
+        background-position: center left;
+    }
+    #img-cyber {
+        background-image: url('Cyberpunk.png');
+    }
+    #img-kuro {
+        background-image: url('Kuro.jpg');
+    }
+    #img-eve {
+        background-image: url('Eve.jpg');
+    }
+    #img-logo {
+        background-image: url('DesinyaLogo.png');
+    }
+    #img-diagram {
+        background-image: url('Diagram4.png');
+    }
+    #img-ibm {
+        background-image: url('IBM_PC.jpg');
+        background-position: center top;
+    }
+    #img-heur {
+        background-image: url('Heuristics2.png');
+    }
+    #img-comtest {
+        background-image: url('TestingCom.jpg');
+    }
+
+section {
+    border: dashed MediumAquaMarine;
+    background-color: black;
+    color: snow;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.textBox {
+    margin-top: 40px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+    .textBox p {
+        margin-bottom: 20px;
+    }
+
+h1, h2 {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    background: linear-gradient(to bottom, transparent 10%, #292929 100%), url('FallingCode.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    text-align: center;
+    width: 100%;
+}

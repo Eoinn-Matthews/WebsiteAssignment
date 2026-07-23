@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: "Cascadia Mono", monospace;
+            color: snow;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            background-color: MediumSeaGreen;
+        }
+
+            .navbar a {
+                float: left;
+                font-size: 16px;
+                color: snow;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+            .dropdown .dropbtn {
+                font-size: 16px;
+                border: none;
+                outline: none;
+                color: white;
+                padding: 14px 16px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+            }
+
+            .navbar a:hover, .dropdown:hover .dropbtn {
+                background-color: MediumAquaMarine;
+            }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: darkgrey;
+            min-width: 135px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                float: none;
+                color: white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: MediumAquaMarine;
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .active {
+            background-color: MediumAquaMarine;
+        }
+
+        .column {
+            float: left;
+            padding: 10px;
+            height: 100px;
+        }
+
+
+            /* Left and right column */
+            .column.side {
+                width: 10%;
+            }
+
+            /* Middle column */
+            .column.middle {
+                width: 75.9%;
+                border: dashed;
+                border-block-color: MediumAquaMarine
+            }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        section {
+            float: right;
+            padding-bottom: 100px;
+            width: 30%;
+            background-color: black;
+            color: snow;
+            margin-right: 2%;
+            position: relative;
+            right: 370px;
+            
+            border: dashed;
+            border-block-color: MediumAquaMarine;
+            padding-left: 15px;
+            padding-top: 5px
+        }
+
+        .image {
+            float: left;
+            width: 20%;
+            position: relative;
+            border: dashed;
+            border-block-color: MediumAquaMarine;
+            
+        }
+
+
+        .textBox {
+            margin-top: 1000px;
+            padding-left: 15px
+        }
+    </style>
+</head>
+<body style="background-color: #292929; ">
+
+    <h1 style="text-align: left; padding-left: 15px"><b>Desinya</b></h1>
+
+    <div class="navbar">
+        <a href="HomePageAssignment2.htmL">Home</a>
+        <a class="active" href="#AboutUs.html">About Us</a>
+        <div class="dropdown">
+            <button class="dropbtn">What We Do<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="#planning">Planning</a>
+                <a href="#building">Building</a>
+                <a href="#testing">Testing</a>
+            </div>
+        </div>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact Us</a>
+    </div>
+
+    <h2 style="text-align: left; padding-left: 15px">$~HOME/ABOUT US/</h2>
+
+    <div class="image" style="background-image: url('CodeTEMP.png'); padding: 118.5px; height: 1px; margin-top: 20px; left: 360px;">
+
+    </div>
+
+    <section style="top: 20px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut elit eget erat accumsan molestie.<br />
+        Nam id maximus nisl. Pellentesque vitae tristique arcu. Integer a elementum erat, eget ornare nisi.<br />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+        Sed nec accumsan velit, et bibendum metus.
+    </section>
+
+    <div class="image" style="background-image: url('CodeTEMP.png'); padding: 118.5px; height: 1px; margin-top: 300px; left: -315px;">
+
+    </div>
+
+    <section style="top: 57px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut elit eget erat accumsan molestie.<br />
+        Nam id maximus nisl. Pellentesque vitae tristique arcu. Integer a elementum erat, eget ornare nisi.<br />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+        Sed nec accumsan velit, et bibendum metus.
+    </section>
+
+    <div class="image" style="background-image: url('CodeTEMP.png'); padding: 118.5px; height: 1px; margin-top: 100px; left: -989px;">
+
+    </div>
+
+    <section style="top: -243px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut elit eget erat accumsan molestie.<br />
+        Nam id maximus nisl. Pellentesque vitae tristique arcu. Integer a elementum erat, eget ornare nisi.<br />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+        Sed nec accumsan velit, et bibendum metus.
+    </section>
+
+
+
+
+    <div class="textBox">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut elit eget erat accumsan molestie.<br />
+            Nam id maximus nisl. Pellentesque vitae tristique arcu. Integer a elementum erat, eget ornare nisi.<br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+            Sed nec accumsan velit, et bibendum metus.
+        </p>
+
+        <p>
+            Integer tortor orci, ornare ut scelerisque sed, varius vel ipsum. Sed dapibus posuere nisi sed dapibus. Nunc iaculis ultrices elit sit amet commodo.<br />
+            Fusce dapibus iaculis pretium. Vivamus aliquet ex sed malesuada vulputate. Mauris a quam odio. In eget nisl dui.<br />
+            Quisque consequat ultrices ex, ac mollis mauris porta ut. Duis hendrerit ultricies massa sit amet pretium. Ut nec porta dui, in venenatis lacus.<br />
+            Aenean mollis congue tempus. Phasellus viverra egestas enim porta fringilla. Phasellus vehicula ipsum et cursus hendrerit.
+
+        </p>
+    </div>
+
+
+</body>
+</html>
